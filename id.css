@@ -80,6 +80,22 @@ body{
     margin-top: auto;
     margin-bottom: auto;
 }
+.pesel{
+    font-weight: 600;
+    font-size: 18px;
+    height: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Poppins", sans-serif;
+}
+.birthdate{
+    font-weight: 600;
+    font-size: 18px;
+    height: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Poppins", sans-serif;
+}
 
 p{
     font-family: "Poppins", sans-serif;
