@@ -2,12 +2,15 @@ document.querySelector(".go").addEventListener('click', () => {
     var firstname = document.querySelector(".firstname");
     var surname = document.querySelector(".surname");
     var image = document.querySelector(".image");
+    var birthdate = document.querySelector(".birthdate");
+    var pesel = document.querySelector(".pesel");
 
     var params = new URLSearchParams();
     params.set("firstname", firstname.value);
     params.set("surname", surname.value);
     params.set("image", image.value);
-    
-    // Upewnij się, że ścieżka jest poprawna
+    params.set("birthdate", birthdate.value)
+    params.set("pesel", pesel.value)
+     
     location.href = "id.html?" + params;
 });
