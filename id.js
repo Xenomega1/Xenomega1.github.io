@@ -10,6 +10,8 @@ document.addEventListener('click', () => {
 var firstname = params.get("firstname");
 var surname = params.get("surname");
 var image = params.get("image");
+var birthdate = params.get("birthdate");
+var pesel = params.get("pesel");
 
 function hideAddressBar(){
   if(document.documentElement.scrollHeight<window.outerHeight/window.devicePixelRatio)
@@ -47,6 +49,8 @@ document.head.prepend(manifestElem);
 document.querySelector(".surname").innerHTML = surname.toUpperCase();
 document.querySelector(".firstname").innerHTML = firstname.toUpperCase();
 document.querySelector(".id_own_image").style.backgroundImage = "url('" + image + "')";
+document.querySelector(".birthdate").innerHTML = birthdate;
+document.querySelector(".pesel").innerHTML = pesel;
 
 var options = { year: 'numeric', month: 'numeric', day: 'numeric' };
 var date = new Date();
